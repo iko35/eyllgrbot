@@ -112,8 +112,8 @@ slm = (
 "**Selamm**",  
 )
 
-acelya = (
-"**Efendim Aşk** 🫢",
+meyit = (
+"**Efendim Dost** 🫢",
 "**Beni mi çağırdıın** 🫠",
 "**Efendimm** ❣️",
 "**He** ❤️",
@@ -130,7 +130,7 @@ acelya = (
 )
 
 sahip = (
-"@MAD1BOY **Sana sesleniyorlarr**",
+"@MytBotSahip **Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
 "**Adamımmmm**",
 "**Sahibime mi sesleniyorsun?**",
