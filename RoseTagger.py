@@ -52,20 +52,20 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-API_ID = int(os.environ.get("API_ID", "24054192"))
-API_HASH = os.environ.get("API_HASH", "ed9a8a61a1b4a1ad0915cbe87ba490ed")
-BOT_TOKEN = os.environ.get("TOKEN", "7306038083:AAGLudbkeGZnHp6W7zOU9_ncv6xKomTOJuw")  
+API_ID = int(os.environ.get("API_ID", "3939406"))
+API_HASH = os.environ.get("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
+BOT_TOKEN = os.environ.get("TOKEN", "7332183812:AAGLJrYtd_J8qXaJ_65jvWnPsg5F5svDvKE")  
 
-BOT_ID = int(os.environ.get("BOT_ID", "7306038083"))  
+BOT_ID = int(os.environ.get("BOT_ID", "7332183812"))  
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "acelya")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002182187594"))  
-OWNER_ID = 5901320319  # Sahip hesabın id'si
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "TgramMuzikBot")  
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002175552878"))  
+OWNER_ID = 7242000752  # Sahip hesabın id'si
 
 
 
 #-------------------------------------------------------------------------
-mongo_client = MongoClient("mongodb+srv://erkbwrs084:909090@cluster0.qdrfgmb.mongodb.net/?retryWrites=true&w=majority")
+mongo_client = MongoClient("mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
 db = mongo_client["tagger_db"]
 blocked_collection = db["blocked"]   
 groups_collection = db["groups"]
@@ -104,7 +104,7 @@ def unblock_user(user_id):
 
 # Başlanğıc Mesajı
 
-@app.on_message(filters.command("start") & filters.private)
+@app.on_message(filters.command("myt") & filters.private)
 async def start(bot: Client, message: Message):
     chat_id = message.chat.id
     first_name = message.from_user.mention
@@ -142,7 +142,7 @@ async def start(bot: Client, message: Message):
                     InlineKeyboardButton("📚 Komutlar", callback_data="cvv"),
                 ],
                 [
-                    InlineKeyboardButton("🗯 Destek", url=f"https://t.me/YikilmayanChat"),
+                    InlineKeyboardButton("🗯 Destek", url=f"https://t.me/DelularSohbet"),
                     InlineKeyboardButton("➕ Beni Grubuna Ekle", url=f"https://t.me/{app.me.username}?startgroup=a"),
                 ],
                 [
@@ -272,7 +272,7 @@ async def handler(client: Client, query: CallbackQuery):
 
 
 # Başlanğıc Button
-@app.on_callback_query(filters.regex("start"))
+@app.on_callback_query(filters.regex("myt"))
 async def _start(bot: Client, query: CallbackQuery):
     await query.edit_message_text(
         start_message.format(query.from_user.mention, BOT_USERNAME),
@@ -402,8 +402,8 @@ async def chatModeHandler(bot: Client, msg: Message):
 
     reply = None
 
-    if text.startswith("acelya"): # * Mesaj buse ile başlıyorsa cevap veriyoruz
-        reply = random.choice(acelya)
+    if text.startswith("meyit"): # * Mesaj buse ile başlıyorsa cevap veriyoruz
+        reply = random.choice(meyit)
         await asyncio.sleep(0.06)
     
     elif kontrol(["selam", "slm", "sa", "selamlar", "selamm"], text): # * Selam yazısı metnin içinde varsa cevap veriyoruz
