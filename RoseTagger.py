@@ -59,7 +59,7 @@ BOT_TOKEN = os.environ.get("TOKEN", "7332183812:AAGLJrYtd_J8qXaJ_65jvWnPsg5F5svD
 BOT_ID = int(os.environ.get("BOT_ID", "7332183812"))  
 
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "TgramMuzikBot")  
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002175552878"))  
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1002175552878))  
 OWNER_ID = 7242000752  # Sahip hesabın id'si
 
 
