@@ -104,7 +104,7 @@ def unblock_user(user_id):
 
 # Başlanğıc Mesajı
 
-@app.on_message(filters.command("myt") & filters.private)
+@app.on_message(filters.command("start") & filters.private)
 async def start(bot: Client, message: Message):
     chat_id = message.chat.id
     first_name = message.from_user.mention
@@ -272,7 +272,7 @@ async def handler(client: Client, query: CallbackQuery):
 
 
 # Başlanğıc Button
-@app.on_callback_query(filters.regex("myt"))
+@app.on_callback_query(filters.regex("start"))
 async def _start(bot: Client, query: CallbackQuery):
     await query.edit_message_text(
         start_message.format(query.from_user.mention, BOT_USERNAME),
