@@ -285,7 +285,7 @@ async def _start(bot: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗯 Kanal", url=f"https://t.me/goktuResmi"
+                        "🗯 Kanal", url=f"https://t.me/MytDuyuru"
                     ),
 
                     InlineKeyboardButton(
@@ -1512,7 +1512,7 @@ Sebep : {message.text}
 
 
 # .stop komutu
-@app.on_message(filters.command("stop") & filters.group)
+@app.on_message(filters.command("cancel") & filters.group)
 async def stop(client, message):
     admins = []
     async for member in client.get_chat_members(message.chat.id, filter=ChatMembersFilter.ADMINISTRATORS):
@@ -1676,7 +1676,7 @@ async def _eros(client: Client, message: Message):
 
 
 
-# ••••••••••••••••••••••••••••"Göktuğ*••••••••••••••••••••••••••
+# ••••••••••••••••••••••••••••"Meyit*••••••••••••••••••••••••••
 
 # Kısa Filtreleme `~|
 
@@ -1697,7 +1697,7 @@ async def games(c: Client, m: Message):
                                         [
                                             [
                                                 InlineKeyboardButton(
-                                                    "Tekrar Oyna 🔄", callback_data="zar"
+                                                    "Tekrar Oyna ♻️", callback_data="zar"
                                                 ),
                                             ]
                                         ]
@@ -1710,7 +1710,7 @@ async def games(c: Client, m: Message):
                                             [
                                                 [
                                                     InlineKeyboardButton(
-                                                        "Tekrar Oyna 🔄", callback_data="dart"
+                                                        "Tekrar Oyna ♻️", callback_data="dart"
                                                     ),
                                                 ]
                                             ]
@@ -1723,7 +1723,7 @@ async def games(c: Client, m: Message):
                                             [
                                                 [
                                                     InlineKeyboardButton(
-                                                        "Tekrar Oyna 🔄", callback_data="basket"
+                                                        "Tekrar Oyna ♻️", callback_data="basket"
                                                     ),
                                                 ]
                                             ]
@@ -1736,7 +1736,7 @@ async def games(c: Client, m: Message):
                                             [
                                                 [
                                                     InlineKeyboardButton(
-                                                        "Tekrar Oyna 🔄", callback_data="futbol"
+                                                        "Tekrar Oyna ♻️", callback_data="futbol"
                                                     ),
                                                 ]
                                             ]
@@ -1749,7 +1749,7 @@ async def games(c: Client, m: Message):
                                             [
                                                 [
                                                     InlineKeyboardButton(
-                                                        "Tekrar Oyna 🔄", callback_data="bowling"
+                                                        "Tekrar Oyna ♻️", callback_data="bowling"
                                                     ),
                                                 ]
                                             ]
@@ -1762,7 +1762,7 @@ async def games(c: Client, m: Message):
                                             [
                                                 [
                                                     InlineKeyboardButton(
-                                                        "Tekrar Oyna 🔄", callback_data="slot"
+                                                        "Tekrar Oyna ♻️", callback_data="slot"
                                                     ),
                                                 ]
                                             ]
@@ -1800,7 +1800,7 @@ async def zar(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="zar"
+                                            "Tekrar Oyna ♻️", callback_data="zar"
                                         ),
                                     ]
                                 ]
@@ -1814,7 +1814,7 @@ async def dart(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="dart"
+                                            "Tekrar Oyna ♻️", callback_data="dart"
                                         ),
                                     ]
                                 ]
@@ -1828,7 +1828,7 @@ async def basket(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="basket"
+                                            "Tekrar Oyna ♻️", callback_data="basket"
                                         ),
                                     ]
                                 ]
@@ -1842,7 +1842,7 @@ async def futbol(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="futbol"
+                                            "Tekrar Oyna ♻️", callback_data="futbol"
                                         ),
                                     ]
                                 ]
@@ -1856,7 +1856,7 @@ async def bowling(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="bowling"
+                                            "Tekrar Oyna ♻️", callback_data="bowling"
                                         ),
                                     ]
                                 ]
@@ -1870,7 +1870,7 @@ async def slot(client: Client, query: CallbackQuery):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            "Tekrar Oyna 🔄", callback_data="slot"
+                                            "Tekrar Oyna ♻️", callback_data="slot"
                                         ),
                                     ]
                                 ]
@@ -2075,6 +2075,7 @@ async def welcome(client: Client, message: Message):
             await client.send_message(LOG_CHANNEL, f"""
 #YENİ GRUBA KATILDIM#
 
+✅ **Grup Link:** @{chat.username}
 🤖 **Grup Adı:** {message.chat.title}
 🆔 **Grup ID:** `{message.chat.id}`
 """)
