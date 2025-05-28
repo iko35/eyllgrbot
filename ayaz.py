@@ -131,7 +131,7 @@ meyit = (
 
 
 
-Sahibin Kim Seni n= (
+Sahibin Kim Seni = (
 "@@eylullunmekani **Sana sesleniyorlarr**",
 
 
