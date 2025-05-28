@@ -129,6 +129,12 @@ meyit = (
 "**Ben olmasam ne yapacaksınn bee** ❤️",
 )
 
+
+
+Sahibin Kim Seni n= (
+"@@eylullunmekani **Sana sesleniyorlarr**",
+
+
 sahip = (
 "@@Eylultggrr_bot **Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
