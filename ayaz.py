@@ -233,7 +233,7 @@ napıyorsun = (
 "**Sen napıyorsun?**",
 "**Oturuyorum sen?**",
 "**Bugun ne yaptın?**",
-) Bugun ne yaptin
+)
 
 takılıyorum = (
 "**Bende** 😂",
