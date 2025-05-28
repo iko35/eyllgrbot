@@ -130,7 +130,7 @@ meyit = (
 )
 
 sahip = (
-"@MytBotSahip **Sana sesleniyorlarr**",
+"@@Eylultggrr_bot **Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
 "**Adamımmmm**",
 "**Sahibime mi sesleniyorsun?**",
@@ -231,7 +231,9 @@ napıyorsun = (
 "**Evdeyim çok sıkıldım**",
 "**Bir şeyler okuyorum**",
 "**Sen napıyorsun?**",
-)
+"**Oturuyorum sen?**",
+"**Bugun ne yaptın?**",
+) Bugun ne yaptin
 
 takılıyorum = (
 "**Bende** 😂",
