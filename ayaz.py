@@ -130,11 +130,6 @@ meyit = (
 )
 
 
-
-Sahibin Kim Seni = (
-"@@eylullunmekani **Sana sesleniyorlarr**",
-
-
 sahip = (
 "@@Eylultggrr_bot **Sana sesleniyorlarr**",
 "**Adamdır** 🌹",
